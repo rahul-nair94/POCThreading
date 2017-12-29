@@ -1,0 +1,87 @@
+<suite>
+	<suiteSettings>
+		<reportingPath>output/MyReport_timestamp.html</reportingPath>
+		<executionEnv>QA1</executionEnv>
+		<testDataFilePath>C:/Users/rahuln/Desktop/Documents/BV UI
+			UX/Credentials/test_data.csv
+		</testDataFilePath>
+		<sauceLabsDeviceConfigFile>sauce_device_config.csv
+		</sauceLabsDeviceConfigFile>
+		<suiteDegreeOfParallelism>3</suiteDegreeOfParallelism>
+	</suiteSettings>
+	<configurations>
+		<configuration>
+			<configID>1</configID>
+			<browsers>1ka1,1ka2</browsers>
+			<featuresPath>src\test\resources\feature_files</featuresPath>
+			<glue>step_definitions</glue>
+			<tags>@Basic</tags>
+			<saucelabsUrl>https://nairrahu:e6a607c5-12ab-4231-a53a-537d1895f67b@ondemand.saucelabs.com:443/wd/hub
+			</saucelabsUrl>
+			<parallelSwitch>true</parallelSwitch>
+			<degreeOfParallelism>2</degreeOfParallelism>
+			<configDependency></configDependency>
+		</configuration>
+		<configuration>
+			<configID>2</configID>
+			<browsers>2ka1,2ka2</browsers>
+			<featuresPath>src\test\resources\feature_files</featuresPath>
+			<glue>step_definitions</glue>
+			<tags>@Detailed</tags>
+			<saucelabsUrl>https://nairrahu:e6a607c5-12ab-4231-a53a-537d1895f67b@ondemand.saucelabs.com:443/wd/hub
+			</saucelabsUrl>
+			<parallelSwitch>true</parallelSwitch>
+			<degreeOfParallelism>1</degreeOfParallelism>
+			<configDependency></configDependency>
+		</configuration>
+		<configuration>
+			<configID>3</configID>
+			<browsers>3ka1,3ka2,3ka3</browsers>
+			<featuresPath>src\test\resources\feature_files</featuresPath>
+			<glue>step_definitions</glue>
+			<tags>@Visuals</tags>
+			<saucelabsUrl>https://nairrahu:e6a607c5-12ab-4231-a53a-537d1895f67b@ondemand.saucelabs.com:443/wd/hub
+			</saucelabsUrl>
+			<parallelSwitch>true</parallelSwitch>
+			<degreeOfParallelism>1</degreeOfParallelism>
+			<configDependency>1,2</configDependency>
+		</configuration>
+		<configuration>
+			<configID>4</configID>
+			<browsers>4ka1, 4ka2, 4ka3</browsers>
+			<featuresPath>src\test\resources\feature_files</featuresPath>
+			<glue>step_definitions</glue>
+			<tags>@Visuals</tags>
+			<saucelabsUrl>https://nairrahu:e6a607c5-12ab-4231-a53a-537d1895f67b@ondemand.saucelabs.com:443/wd/hub
+			</saucelabsUrl>
+			<parallelSwitch>true</parallelSwitch>
+			<degreeOfParallelism>1</degreeOfParallelism>
+			<configDependency>1</configDependency>
+		</configuration>
+		<configuration>
+			<configID>5</configID>
+			<browsers>5ka1, 5ka2, 5ka3</browsers>
+			<featuresPath>src\test\resources\feature_files</featuresPath>
+			<glue>step_definitions</glue>
+			<tags>@Visuals</tags>
+			<saucelabsUrl>https://nairrahu:e6a607c5-12ab-4231-a53a-537d1895f67b@ondemand.saucelabs.com:443/wd/hub
+			</saucelabsUrl>
+			<parallelSwitch>true</parallelSwitch>
+			<degreeOfParallelism>1</degreeOfParallelism>
+			<configDependency>2</configDependency>
+		</configuration>
+		<configuration>
+			<configID>6</configID>
+			<browsers>6ka1, 6ka2, 6ka3</browsers>
+			<featuresPath>src\test\resources\feature_files</featuresPath>
+			<glue>step_definitions</glue>
+			<tags>@Visuals</tags>
+			<saucelabsUrl>https://nairrahu:e6a607c5-12ab-4231-a53a-537d1895f67b@ondemand.saucelabs.com:443/wd/hub
+			</saucelabsUrl>
+			<parallelSwitch>true</parallelSwitch>
+			<degreeOfParallelism>3</degreeOfParallelism>
+			<configDependency>4,5</configDependency>
+		</configuration>
+	</configurations>
+
+</suite>
